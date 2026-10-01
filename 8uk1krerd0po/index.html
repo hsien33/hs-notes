@@ -135,6 +135,22 @@ em{font-style:normal;background:linear-gradient(transparent 60%,#d9ecb8 60%);fon
 .nitem .del:hover{color:#b4453a;background:#fdeeec}
 .empty{color:var(--ink-3);font-size:.95rem;text-align:center;padding:26px 10px;background:#fff;border:1px dashed var(--line);border-radius:12px}
 
+/* 小論文分頁 */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+@media(max-width:620px){.duo{grid-template-columns:1fr}}
+.duo>div{border-radius:13px;padding:16px 18px;font-size:.95rem;line-height:1.85}
+.duo .dad{background:#f4f6f1;border:1px solid var(--line)}
+.duo .you{background:var(--g-bg);border:1.5px solid var(--g-l)}
+.duo .tg{font-size:.74rem;font-weight:800;letter-spacing:1px;margin-bottom:7px;display:block}
+.duo .dad .tg{color:var(--ink-3)}
+.duo .you .tg{color:var(--g-d)}
+.step.ok{background:var(--g-bg);border-color:#cfe0b6}
+.step.ok .n{background:var(--g);color:#fff}
+.step.ok b{color:var(--g-d)}
+.step.now{border:1.5px solid var(--o);background:var(--o-bg)}
+.step.now .n{background:var(--o);color:#fff}
+.bkc.rec{border:1.5px solid var(--g-l);background:var(--g-bg)}
+.bkc .nb{font-size:.78rem;font-weight:800;color:var(--ink-3);background:#f4f6f1;display:inline-block;padding:2px 9px;border-radius:6px;margin-bottom:8px;letter-spacing:.5px}
 .priv{background:#f4f6f1;border-radius:12px;padding:14px 18px;font-size:.9rem;color:var(--ink-2);margin:16px 0;border-left:4px solid var(--g-l)}
 .foot{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:.86rem;color:var(--ink-3);line-height:1.8}
 </style>
@@ -155,6 +171,7 @@ em{font-style:normal;background:linear-gradient(transparent 60%,#d9ecb8 60%);fon
   <div class="in">
     <button class="on" data-t="k1">先看這個</button>
     <button data-t="k2">這學期 5 件事</button>
+    <button data-t="k8">小論文</button>
     <button data-t="k3">怎麼寫才不廢</button>
     <button data-t="k4">東西怎麼丟</button>
     <button data-t="k5">可以玩什麼</button>
@@ -634,6 +651,257 @@ em{font-style:normal;background:linear-gradient(transparent 60%,#d9ecb8 60%);fon
   </div>
 </section>
 
+<!-- 8 -->
+<section id="k8">
+  <h2>小論文：詞光</h2>
+
+  <div class="lead">
+    <p><strong>題目定了：我們一起做的背單字 App「詞光」。</strong></p>
+    <p>要做的事，是把它寫成一篇<strong>小論文</strong>，投「中學生網站」的小論文比賽——目標是 <strong>2027 年 3 月中</strong>那一梯（也就是你高一下學期）。</p>
+    <p style="margin-bottom:0;font-size:.95rem;color:var(--ink-2)"><strong>為什麼不走科展：</strong>科展在建中是校隊等級的競爭，而且校內 12 月中就要交作品說明，中間卡著兩次段考。小論文的時間比較合理，而且做出來一樣能放進學習歷程檔案，不會白做。</p>
+  </div>
+
+  <h3>這件事誰做什麼</h3>
+  <p>先把這個講清楚，因為這是整件事最容易做錯的地方。</p>
+
+  <div class="duo">
+    <div class="dad">
+      <span class="tg">爸爸做（雜工）</span>
+      查投稿規則、日期、格式要求<br>
+      跑行政流程、去要學校驗證碼<br>
+      把散落的資料整理成表格給你看<br>
+      校對錯字、處理排版<br>
+      時間到了提醒你
+    </div>
+    <div class="you">
+      <span class="tg">只有你能做</span>
+      決定要研究哪一個問題<br>
+      決定怎麼測量、怎麼分類<br>
+      看數據，判斷它在說什麼<br>
+      <strong>所有文字，一個字都自己寫</strong><br>
+      面試被問的時候，自己回答
+    </div>
+  </div>
+
+  <div class="hot">
+    <div class="t">為什麼不能幫你寫</div>
+    不是在考驗你。是因為大學二階面試一定會<strong>追問細節</strong>——「你為什麼選這個題目」「那個數字怎麼算出來的」「如果結果相反你會怎麼想」。<br>
+    這些問題，只有真的自己做過、自己想過的人答得出來。<strong>別人幫你寫的那一刻，這份資料就從加分變成風險。</strong><br>
+    <span style="font-size:.9rem;color:var(--ink-2)">（而且招聯會的規定本來就寫了「重視資料真實性及學生自主準備」。）</span>
+  </div>
+
+  <h3>現在走到哪裡</h3>
+
+  <div class="step ok"><div class="n">✓</div><div><b>題目定了</b><div class="q">詞光 App。這一步花最久，因為要先確定它值得寫。</div></div></div>
+  <div class="step ok"><div class="n">✓</div><div><b>回饋紀錄開始記了</b><div class="q">目前已經有 3 筆（打字回想、發音按鈕、熟悉度按鈕）。這份紀錄會直接變成小論文的材料。</div></div></div>
+  <div class="step now"><div class="n">3</div><div><b>挑一個研究問題　← 你現在在這裡</b><div class="q">下面有七個候選。<i>挑哪一個由你決定</i>——因為面試會問「你為什麼想知道這個」，那題只有你答得出來。</div></div></div>
+  <div class="step"><div class="n">4</div><div><b>寫下你「猜」答案是什麼</b><div class="q">一句話就好。這句話之後會變成最值錢的反思：「我原本以為 ＿＿＿，後來發現 ＿＿＿」。</div></div></div>
+  <div class="step"><div class="n">5</div><div><b>收資料（約 2–3 個月）</b><div class="q">繼續用 App、繼續記回饋。如果選的是要先設計的題目，十月下旬就要把設計定下來。</div></div></div>
+  <div class="step"><div class="n">6</div><div><b>寒假寫第一版</b><div class="q">寒假是唯一一段不用顧段考的完整時間。</div></div></div>
+  <div class="step"><div class="n">7</div><div><b>3 月投稿</b><div class="q">投稿流程由爸爸跑，但有幾個坑你要知道（在這頁最下面）。</div></div></div>
+
+  <div class="hot">
+    <div class="t">🔴 今天就要做的一件事：截圖</div>
+    App 要改的那三個地方——<strong>迴響區塊、單字旁邊的小喇叭按鈕、底部四顆熟悉度按鈕</strong>——<strong>改掉之後就永遠拍不到了。</strong><br>
+    小論文最有說服力的證據就是「改之前 vs 改之後」的對照圖。其他東西都能補，截圖不能補。<br>
+    <strong>三張圖，兩分鐘的事，今天做完。</strong>
+  </div>
+
+  <h3>七個候選問題，挑一個</h3>
+
+  <p>先搞懂一個會決定你能做什麼的分野：</p>
+
+  <div class="duo">
+    <div class="dad">
+      <span class="tg">觀察型</span>
+      <strong>回頭看已經有的數據。</strong><br>
+      隨時可以開始。<br>
+      能說的話：「這兩件事有關聯」。
+    </div>
+    <div class="you">
+      <span class="tg">實驗型</span>
+      <strong>先設計，之後才收數據。</strong><br>
+      🔴 必須先設計好才開始蒐集，<strong>不能事後補</strong>。<br>
+      能說的話：「可能有因果關係」。
+    </div>
+  </div>
+
+  <div class="tip">
+    <div class="t">這句話很重要</div>
+    事後把數據撈出來、卻寫成是事先設計的實驗，這在研究上是大忌，面試也會被問倒。<br>
+    <strong>誠實做觀察型完全沒問題</strong>——只要你講清楚「這只能看出關聯，不能證明因果」。
+  </div>
+
+  <div class="bk">
+    <div class="bkc rec">
+      <span class="bkg">✅ 現在就能做</span><span class="nb">推薦</span>
+      <b>🅶 設計者想要的「認真」，和使用者想要的「順手」，會打架嗎？</b>
+      <span>你的三次回饋全部指向同一件事：我們加進去「確保認真」的機制，實際用起來都變成麻煩，最後一個一個被簡化掉。<br><strong>資料已經在自然累積了，不用另外做實驗。</strong><br>難度 低中　·　方向：資訊／設計／心理</span>
+    </div>
+    <div class="bkc rec">
+      <span class="bkg">✅ 現在就能做</span><span class="nb">推薦</span>
+      <b>🅱 學測高頻字表，對我這個程度的人真的有用嗎？</b>
+      <span>把你算出的字頻前 100／前 500，對照你入學時就已經會的字。<br>關鍵判斷：<strong>「會」要怎麼定義？</strong>看得懂算會嗎？拼得出來？用得出來？你選哪個定義，結論就不一樣。<br><strong>這題有可能推翻你自己做的功能——敢問這種問題還誠實報告，是最有份量的地方。</strong><br>難度 低中　·　方向：教育／語言／資料分析</span>
+    </div>
+    <div class="bkc">
+      <span class="bkg">✅ 現在就能做</span>
+      <b>🅳 遊戲化（升級、勳章、連續天數）真的讓我持續下去了嗎？</b>
+      <span>看你自己的每日使用紀錄。<br>關鍵判斷：<strong>相關不等於因果。</strong>升級後用得比較勤，也可能是「本來就用得勤的人才會升級」。<br>加分做法：看「斷掉連續天數之後」發生什麼——放棄了，還是回來了？<br>難度 低　·　方向：行為科學／心理／商管</span>
+    </div>
+    <div class="bkc">
+      <span class="bkg">✅ 現在就能做</span>
+      <b>🅵 App 排的複習時間，跟我實際忘記的時間吻合嗎？</b>
+      <span>比對演算法預測的「該複習了」和你實際答對／答錯的結果。<br>這是最接近真正研究的一題，但<strong>難度高</strong>——⚠️ 如果你解釋不了那個演算法怎麼運作，就不要選，面試第一題就會問這個。<br>難度 高　·　方向：資訊／數學／統計</span>
+    </div>
+    <div class="bkc">
+      <span class="bkg">🔴 要先設計</span>
+      <b>🅰 字根字首分組學，和隨機順序學，保留率有差嗎？</b>
+      <span>兩組難度相當的新字，一組按字根分組、一組打散，比較隔 7 天／14 天的答對率。<br>關鍵判斷：<strong>怎麼讓兩組字「難度相當」？</strong>字長？字頻？你本來的熟悉度？——這個判斷才是你的研究核心。<br>這是你翻圖書館的書才做出來的功能，回頭驗證它有沒有用，弧線很完整。<br>難度 中　·　方向：教育／心理／語言學</span>
+    </div>
+    <div class="bkc">
+      <span class="bkg">🔴 要先設計</span>
+      <b>🅲 圖片記憶對哪種字有效、哪種沒效？</b>
+      <span>具體名詞 vs 抽象詞，有圖／無圖的保留率。<br>關鍵判斷：<strong>「具體」和「抽象」怎麼分？</strong>邊界字怎麼辦（freedom、speed、growth）？分類規則就是你的方法論。<br>你們的專案文件自己就寫了概念型內容「直接不顯示圖像」——代表已經撞到這個問題了。<br>難度 中　·　方向：認知心理／教育／人機介面</span>
+    </div>
+    <div class="bkc">
+      <span class="bkg">🔴 要先設計</span>
+      <b>🅴 同義字一起背，是幫助還是干擾？</b>
+      <span>成組學的同義字 vs 分開學的，比較「選錯成另一個同義字」的比率。<br><strong>記憶研究裡本來就有相反的兩派說法</strong>（一起學幫助連結 vs 互相干擾）。小論文要有引註資料，這題天然就有。<br>難度 中　·　方向：認知心理／語言學／教育</span>
+    </div>
+  </div>
+
+  <div class="tip">
+    <div class="t">🔴 時間上的限制</div>
+    如果你想做<strong>實驗型</strong>（🅰、🅲、🅴），<strong>十月下旬就要把設計定下來</strong>，然後花 2–3 個月收數據。<br>
+    現在不設計，到寒假就只剩觀察型可以做了。
+  </div>
+
+  <h4>如果你想自己想一個：好問題的五個檢查</h4>
+  <div class="ask">
+    <ol>
+      <li><strong>能用「是／否」或「多少」回答嗎？</strong>「探討英語學習的重要性」不行；「字根分組能不能提高保留率」可以</li>
+      <li><strong>我拿得到回答它的數據嗎？</strong>拿不到就換一個</li>
+      <li><strong>半年內做得完嗎？</strong>課業優先，別開太大</li>
+      <li><strong>結果有沒有可能跟我想的相反？</strong>如果答案一定是「有效」，那就不是研究，是宣傳</li>
+      <li><strong>我真的好奇嗎？</strong>面試會問「你為什麼想知道這個」。答不出來就不要選</li>
+    </ol>
+  </div>
+
+  <h3>回饋紀錄：每一次都要記</h3>
+
+  <p>這份紀錄<strong>本身就是研究資料</strong>，不是雜記。小論文的「結果」和「討論」會直接從這裡長出來。</p>
+
+  <div class="card">
+    <h4>每次改 App 之前，記這四件事</h4>
+    <ol>
+      <li><strong>原本是怎麼設計的</strong>（配一張截圖）</li>
+      <li><strong>實際用的時候遇到什麼問題</strong>——「哪裡不順」要寫具體，不要只寫「不好用」</li>
+      <li><strong>決定怎麼改</strong>，以及<strong>為什麼這樣改</strong></li>
+      <li><strong>改完之後觀察到什麼</strong>——每天練的字數有變嗎？一次用的時間有變短嗎？</li>
+    </ol>
+    <p style="margin-bottom:0;font-size:.93rem;color:var(--ink-2)">第 4 點最容易漏，但它最值錢。<strong>就算沒有明顯變化也要寫「沒有差別」——那也是結果。</strong></p>
+  </div>
+
+  <h4>已經看得出來的模式（這可能是整篇的核心）</h4>
+  <div class="card">
+    <p style="margin-top:0">把三次回饋放在一起看：</p>
+    <ul>
+      <li>翻卡前<strong>要打字</strong>寫下答案 → 改成心裡想 3 秒（去掉一道強制動作）</li>
+      <li>要點<strong>小喇叭圖示</strong>才發音 → 改成點整個框就發音（放大操作範圍）</li>
+      <li><strong>四顆按鈕</strong>選熟悉度 → 改成左右滑動（整個取消瞄準）</li>
+    </ul>
+    <p><strong>三次都是在減少操作上的麻煩。</strong></p>
+    <p style="margin-bottom:0"><em>我們設計的時候傾向加入「確保使用者認真」的機制，但實際使用時這些機制幾乎都變成摩擦，最後一個一個被簡化掉。</em></p>
+  </div>
+
+  <div class="tip">
+    <div class="t">但這裡有一個不要假裝解決的問題</div>
+    <strong>比較順手，不一定等於學得比較好。</strong>打字回想可能真的幫助記憶，只是太累所以沒人願意做。<br>
+    這個矛盾你不用解決它——<strong>把它寫清楚，就是好的討論。</strong>
+  </div>
+
+  <h3>要守的底線</h3>
+
+  <div class="rules">
+    <div class="rule"><div class="no">1</div><div class="tx"><b>App 是怎麼做的，照實寫</b><span>它是你跟爸爸一起討論功能、請 AI 寫出來的。<strong>要寫清楚這件事</strong>，不能寫成「我自己寫的程式」。<br>你真正的貢獻是：<strong>決定要有哪些功能、為什麼要有、做出來不好用時怎麼改</strong>——那叫規格定義能力，而且很值錢。寫假的才會扣分。</span></div></div>
+    <div class="rule"><div class="no">2</div><div class="tx"><b>只有你一個使用者，就說只有一個</b><span>不能說「這個方法對所有人有效」。寫成<strong>個案研究</strong>，並寫明不能推論到別人——個案研究是合法的研究型態，只要限制講清楚。<br>想要多人數據的話：<strong>免費給幾個同學用</strong>就有了。</span></div></div>
+    <div class="rule"><div class="no">3</div><div class="tx"><b>結果跟你想的相反，那是好事</b><span>研究報告寫「我以為有效，結果沒有」，比寫「果然有效」有價值得多。<br><strong>如果答案一定會是「有效」，那就不是研究。</strong></span></div></div>
+    <div class="rule"><div class="no">4</div><div class="tx"><b>有一個數據可信度的問題要誠實交代</b><span>熟悉度是用那四顆難按的按鈕收集的。按鈕不好按，就有可能按錯、或為了省事亂選。<br><strong>所以改成手勢之前收到的熟悉度數據，可信度要打折。</strong>這要寫進「研究限制」——這是你自己的使用回饋揭露出來的，寫出來是加分不是減分。</span></div></div>
+  </div>
+
+  <h3>面試會問什麼（先自己試答）</h3>
+  <div class="ask">
+    <ol>
+      <li>你為什麼想知道這個問題的答案？</li>
+      <li>這個 App 哪些部分是你做的、哪些是 AI 做的？</li>
+      <li>你怎麼知道你的結論不是巧合？</li>
+      <li>如果再做一次，你會改哪裡？</li>
+      <li>你的研究有什麼限制？</li>
+    </ol>
+    <p style="margin:10px 0 0;font-size:.93rem;color:var(--ink-2)">這五題現在就能練。<strong>答得出來的，才寫進小論文；答不出來的，就不要寫。</strong></p>
+  </div>
+
+  <h3>投稿流程的坑（爸爸會處理，但你要知道）</h3>
+  <div class="card">
+    <ul style="margin-bottom:0">
+      <li>要先向<strong>圖書股長或圖書館讀者服務組</strong>索取<strong>學校驗證碼</strong>才能報名</li>
+      <li>註冊<strong>必須用建中的 Google 信箱</strong>，不能用私人信箱</li>
+      <li>🔴 <strong>入學年填錯就喪失資格，連獎狀都會被追回</strong>——這一格要看兩次</li>
+      <li>要繳切結書；圖書館會做校內初審</li>
+      <li><strong>校內有件數總量上限</strong>，所以要早投，不要卡到最後一天</li>
+    </ul>
+  </div>
+
+  <h3>你現在可以勾的事</h3>
+
+  <div class="task">
+    <label><input type="checkbox">
+      <div><span class="when">今天</span>
+        <div class="h">三張截圖</div>
+        <div class="d">迴響區塊、小喇叭按鈕、四顆熟悉度按鈕。改掉就補不回來了。</div>
+      </div>
+    </label>
+  </div>
+  <div class="task">
+    <label><input type="checkbox">
+      <div><span class="when">這週</span>
+        <div class="h">從七個候選裡挑一個（或自己想一個）</div>
+        <div class="d">挑完用一句話寫下來。寫不出一句話，表示還沒想清楚。</div>
+        <div class="why">如果挑的是 🅰🅲🅴（要先設計的），十月下旬前要把設計定下來。</div>
+      </div>
+    </label>
+  </div>
+  <div class="task">
+    <label><input type="checkbox">
+      <div><span class="when">這週</span>
+        <div class="h">寫下你猜答案是什麼、為什麼</div>
+        <div class="d">一兩句就好。這句話之後會變成最值錢的那段反思。</div>
+      </div>
+    </label>
+  </div>
+  <div class="task">
+    <label><input type="checkbox">
+      <div><span class="when">段考後</span>
+        <div class="h">試答上面那五題面試題</div>
+        <div class="d">講給爸爸聽，不用寫。卡住的地方就是還沒想清楚的地方。</div>
+      </div>
+    </label>
+  </div>
+  <div class="task">
+    <label><input type="checkbox">
+      <div><span class="when">持續</span>
+        <div class="h">每次改 App，當天記四件事</div>
+        <div class="d">原本怎樣、哪裡不順、怎麼改、改完觀察到什麼。<strong>當天記，不要事後回想。</strong></div>
+      </div>
+    </label>
+  </div>
+
+  <div class="foot">
+    <p>段考優先。這頁的事情除了截圖，其他都可以等段考考完再動。</p>
+    <p style="margin-top:10px">題目與投稿梯次依 2026-10 認知整理　·　投稿規定以中學生網站與建中圖書館公告為準</p>
+  </div>
+</section>
+
 <!-- 6 -->
 <section id="k6">
   <h2>我的隨手記</h2>
@@ -678,7 +946,7 @@ em{font-style:normal;background:linear-gradient(transparent 60%,#d9ecb8 60%);fon
   try{var l=localStorage.getItem('lp_kid_tab'); if(l&&document.getElementById(l))go(l);}catch(e){}
 
   // tasks
-  var tasks=document.querySelectorAll('.task'), KEY='lp_kid_tasks';
+  var tasks=document.querySelectorAll('#k2 .task'), KEY='lp_kid_tasks';
   var st=[]; try{st=JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){}
   var msgs=['還沒開始，先看第一件。','開始了。第一件是最重要的那件。','兩件了，節奏抓到了。','過半了，剩下的都不難。','剩最後一件。','五件全部完成。這學期該做的都做了，剩下就是把成績顧好。'];
   function upd(){
@@ -783,6 +1051,19 @@ em{font-style:normal;background:linear-gradient(transparent 60%,#d9ecb8 60%);fon
     ta.addEventListener('blur',function(){ta.remove();});
   }
   render();
+})();
+</script>
+<script>
+(function(){
+  var ts=document.querySelectorAll('#k8 .task'), K='lp_kid_paper';
+  if(!ts.length)return;
+  var st=[]; try{st=JSON.parse(localStorage.getItem(K)||'[]')}catch(e){}
+  function paint(){ts.forEach(function(t){t.classList.toggle('done',t.querySelector('input').checked)})}
+  function sync(){var s=[];ts.forEach(function(t){s.push(t.querySelector('input').checked)});try{localStorage.setItem(K,JSON.stringify(s))}catch(e){} paint();}
+  ts.forEach(function(t,i){ if(st[i])t.querySelector('input').checked=true;
+    t.addEventListener('change',function(){setTimeout(sync,0)});
+    t.addEventListener('click',function(){setTimeout(sync,0)}); });
+  paint();
 })();
 </script>
 </body>
