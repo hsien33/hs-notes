@@ -1,0 +1,188 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><title>007｜【實作作品】類型實例分享－臺灣大學資訊工程系 陳仲肯學長</title><style>
+:root{--g:#6f8f4a;--gd:#4f6b31;--gb:#f0f6e8;--o:#e08b3c;--ob:#fdf2e5;--ink:#222420;--ink2:#5a5e55;--ink3:#8b8f85;--paper:#fbfcf9;--card:#fff;--line:#e4e8dd}
+*{box-sizing:border-box}html{color-scheme:light}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.8;font-size:16px}
+header{background:linear-gradient(140deg,#6f8f4a,#4f6b31);color:#fff;padding:24px 20px}.hd{max-width:900px;margin:auto}.hd h1{margin:0;font-size:1.45rem}.hd p{margin:4px 0 0;opacity:.85}
+.wrap{max-width:900px;margin:auto;padding:24px 20px 80px}a{color:var(--gd);text-decoration:none}a:hover{text-decoration:underline}.back{display:inline-block;margin-bottom:18px;font-weight:700}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin:16px 0;box-shadow:0 2px 6px rgba(0,0,0,.035)}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 18px}.pill{font-size:.8rem;font-weight:800;background:var(--gb);color:var(--gd);padding:4px 10px;border-radius:999px}
+h1,h2,h3,h4{line-height:1.35}h2{font-size:1.5rem;margin:28px 0 12px}h3{font-size:1.2rem;margin:28px 0 10px}h4{font-size:1.02rem;margin:22px 0 8px}
+blockquote{margin:14px 0;padding:14px 18px;background:var(--gb);border-left:4px solid var(--g);border-radius:10px}ul,ol{padding-left:24px}li{margin:6px 0}
+table{width:100%;border-collapse:collapse;margin:16px 0}th,td{border:1px solid var(--line);padding:9px;vertical-align:top;text-align:left}th{background:#f4f6f1}
+details{background:#fff;border:1px solid var(--line);border-radius:14px;margin:20px 0;overflow:hidden}summary{padding:16px 18px;cursor:pointer;font-weight:800;background:#f7f8f5}.transcript{padding:8px 20px 20px}.transcript p{margin:10px 0;white-space:pre-wrap}
+.nav{display:flex;justify-content:space-between;gap:12px;margin-top:28px}.nav a{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}.vcard{background:#fff;border:1px solid var(--line);border-radius:15px;padding:18px}.vcard h3{margin:5px 0 8px;font-size:1.05rem}.vcard p{margin:8px 0;color:var(--ink2)}.vcard .n{font-size:.75rem;font-weight:800;color:var(--gd);letter-spacing:.7px}.vcard .go{display:inline-block;margin-top:7px;font-weight:800}
+.hero{background:var(--gb);border:1px solid #dbe8ca;border-radius:16px;padding:18px 20px;margin:18px 0}.hero strong{color:var(--gd)}
+code{background:#f3f4ef;padding:2px 5px;border-radius:5px}
+@media(max-width:600px){body{font-size:15px}.wrap{padding-left:15px;padding-right:15px}.card{padding:17px}.nav{flex-direction:column}}
+</style></head>
+<body><header><div class="hd"><h1>CK Talks｜007</h1><p>【實作作品】類型實例分享－臺灣大學資訊工程系 陳仲肯學長</p></div></header>
+<div class="wrap">
+<a class="back" href="./">← 回全部影片</a>　<a class="back" href="../index.html#k7">回「我的高中三年」</a>
+<div class="hero"><strong>好的實作學習歷程，不只是「我做了一份報告」，而是讓人看見我真的把問題看懂、重新整理、親手驗證，並知道自己在團體作品中到底做了什麼。</strong></div>
+<div class="meta"><span class="pill">007</span><span class="pill">數學實作／四平方和／程式驗證／GeoGebra／學習歷程／資工</span><span class="pill">約 00:00–07:05</span></div>
+<div class="card"><ul>
+<li><strong>來源影片名稱</strong>：陳仲肯學長（臺大資訊工程系）</li>
+<li><strong>來源連結</strong>：https://drive.google.com/file/d/15KqA3VIPMlEc_ztVtFLBSPON6dS84D67/view</li>
+<li><strong>上映日期</strong>：2023.12.15</li>
+<li><strong>主題分類</strong>：數學實作／四平方和／程式驗證／GeoGebra／學習歷程／資工</li>
+<li><strong>逐字稿有效內容</strong>：約 00:00–07:05</li>
+</ul>
+<h3>一眼看懂：這支影片最重要的 8 點</h3>
+<ol>
+<li>
+<p><strong>學習歷程要先讓人快速知道「這份作品在做什麼」。</strong><br />
+   摘要、研究動機、研究目的與課程脈絡應放在前面，因為教授不一定會逐字閱讀整份檔案。</p>
+</li>
+<li>
+<p><strong>把「證明」改寫成自己真正看懂的版本。</strong><br />
+   陳仲肯不是直接複製網路證明，而是先閱讀、把不懂的地方弄清楚，再用自己的理解重新寫一次。</p>
+</li>
+<li>
+<p><strong>程式驗證能把抽象數學轉成可操作證據。</strong><br />
+   例如讓使用者輸入一個正整數，程式實際輸出它如何表示成四個整數平方和，讓理論不只停在「存在性」。</p>
+</li>
+<li>
+<p><strong>作品最好能跟目標科系產生真實連結。</strong><br />
+   他特別標出自己負責程式部分，對資工系教授而言，這會比只寫「我對資工有興趣」更有說服力。</p>
+</li>
+<li>
+<p><strong>學習歷程不是只為升學而做。</strong><br />
+   如果還不知道目標科系，也可以從自己的興趣出發；NBA 球鞋、材料、運動、音樂等興趣都可能轉成可研究的主題。</p>
+</li>
+<li>
+<p><strong>課程沒有作業，不代表不能做學習歷程。</strong><br />
+   線性代數課沒有大型作業，他就把自己真正學到、覺得有意思的概念整理成一份作品。</p>
+</li>
+<li>
+<p><strong>脈絡一定要交代清楚。</strong><br />
+   教授需要知道：這是什麼課？老師要求什麼？你做了哪些部分？為什麼這樣做？不然內容再多也會讓人看不懂。</p>
+</li>
+<li>
+<p><strong>學習歷程仍要做，但不要忽略真正的學科能力。</strong><br />
+   他提醒，像臺大電機／資工仍高度重視二階筆試，因此學習歷程不能取代實力；兩者都要準備。</p>
+</li>
+</ol>
+<h3>作品案例：四平方和</h3>
+<p>陳仲肯學長的流程大致是：</p>
+<blockquote>
+<p>找題目 → 讀網路證明 → 弄懂不清楚處 → 用自己的方式重寫 → 寫程式驗證 → 整理成報告</p>
+</blockquote>
+<p>內容包含：
+- 題目敘述
+- 摘要
+- 課程與作業背景
+- 研究動機
+- 研究目的
+- 完整證明
+- 參考資料
+- 程式碼
+- 個人分工</p>
+<h3>這份作品做得好的地方</h3>
+<h4>1. 證明不是直接貼上</h4>
+<p>把容易困惑的地方重新說清楚，能看出真正理解過。</p>
+<h4>2. 有程式驗證</h4>
+<p>讓「四平方和一定存在」進一步變成：</p>
+<blockquote>
+<p>具體輸入 n → 找出實際四個整數</p>
+</blockquote>
+<h4>3. 清楚標示個人貢獻</h4>
+<p>團體作品中明確寫出：</p>
+<blockquote>
+<p>我負責程式部分</p>
+</blockquote>
+<p>這讓審查者能辨認個人能力。</p>
+<h4>4. 跟資工方向有一致性</h4>
+<p>數學題目＋程式驗證，自然連結到資訊工程。</p>
+<h3>可以改進的地方</h3>
+<ul>
+<li>Overleaf／LaTeX 中文字型顯示曾有問題，當時沒有完整解決。</li>
+<li>題目不是原創，研究延伸空間有限。</li>
+<li>如果能在證明之外加入更深入的改寫、推廣、不同算法比較或效能分析，會更完整。</li>
+</ul>
+<h3>可重複使用的學習觀念</h3>
+<h4>1. 「看懂」比「找到答案」重要</h4>
+<p>正確流程：</p>
+<blockquote>
+<p>查資料 → 看不懂 → 拆解 → 弄懂 → 自己重寫</p>
+</blockquote>
+<p>而不是：</p>
+<blockquote>
+<p>查資料 → 複製貼上</p>
+</blockquote>
+<h4>2. 理論＋實作會比單一形式更有說服力</h4>
+<p>例如：</p>
+<blockquote>
+<p>數學證明 + 程式驗證<br />
+科學理論 + 實驗<br />
+歷史論點 + 資料視覺化</p>
+</blockquote>
+<h4>3. 團體作品一定要標示自己的部分</h4>
+<p>至少回答：
+- 我負責什麼？
+- 我解決了什麼問題？
+- 我學到什麼？
+- 如果重做一次，我會怎麼改？</p>
+<h4>4. 興趣可以直接變成學習歷程題目</h4>
+<p>不一定要先有科系，再找作品。</p>
+<p>也可以：</p>
+<blockquote>
+<p>興趣 → 問題 → 查資料 → 分析 → 作品 → 再反推自己適合什麼方向</p>
+</blockquote>
+<h4>5. 「沒有作業」不是理由</h4>
+<p>課堂只要真的有學到東西，就可以自己整理：
+- 一個核心概念
+- 一個延伸問題
+- 一份筆記
+- 一個小程式
+- 一次證明
+- 一個案例分析</p>
+<h4>6. 摘要與脈絡要優先</h4>
+<p>教授閱讀時間有限。</p>
+<p>建議開頭固定有：
+1. 這是哪一門課？
+2. 題目是什麼？
+3. 我做了什麼？
+4. 我負責什麼？
+5. 最重要的成果是什麼？</p>
+<h4>7. 跟科系連結最好用「證據」，不要只寫動機</h4>
+<p>比起：</p>
+<blockquote>
+<p>我很喜歡資工。</p>
+</blockquote>
+<p>更有力的是：</p>
+<blockquote>
+<p>我用程式解決了一個數學問題，而且能說明我寫了什麼、怎麼驗證。</p>
+</blockquote>
+<h4>8. 學習歷程不能取代基本學力</h4>
+<p>作品再漂亮，也不能忽略：
+- 課業
+- 筆試
+- 學科實力
+- 解題能力</p>
+<h3>可直接套用的「數學／程式實作」模板</h3>
+<ol>
+<li>課程背景</li>
+<li>問題敘述</li>
+<li>為什麼選這題</li>
+<li>我一開始怎麼理解</li>
+<li>哪裡看不懂</li>
+<li>我查了哪些資料</li>
+<li>我怎麼重新整理／證明</li>
+<li>我寫了什麼程式</li>
+<li>程式如何驗證理論</li>
+<li>個人分工</li>
+<li>遇到的錯誤</li>
+<li>修正方法</li>
+<li>最後結果</li>
+<li>可以延伸什麼</li>
+<li>與未來方向的關聯</li>
+</ol>
+<h3>本片一句話濃縮</h3>
+<blockquote>
+<p><strong>好的實作學習歷程，不只是「我做了一份報告」，而是讓人看見我真的把問題看懂、重新整理、親手驗證，並知道自己在團體作品中到底做了什麼。</strong></p>
+</blockquote>
+<hr /></div>
+<details><summary>📝 展開完整校正版逐字稿</summary><div class="transcript"><p>大家好,今天我要分享我的學習歷程是我的作品《四平方和》首先先自我介紹一下,我是陳仲肯2023年從建中畢業然後現在就讀於臺大資工那這次要分享的學習歷程是數學與電腦課的題目報告那這一堂課主要是教GeoGebra使用這次的題目報告是要求做與數學有關的分組報告題目可以自選</p><p>然後我們就上網找了有趣的數學問題就是這個百大定理之一的四平方和它的問題敘述是說每個正整數n都可以表示成四個整數的平方和那我們完成作業的方法就是先閱讀網路上可以找得到的證明然後以記憶的話再寫一遍那我們會把不清楚的地方搞懂之後再仔細的把細節寫出來</p><p>我們做了一個程式來驗證就是讓使用者輸入一個正整數程式就輸出這個整數是拿四個整數的平方盒這樣接下來就來看一下我們的作業本體首先我們先寫了四平方和的問題取數然後接下來是概要呃,表揚一下這堂課是什麼課然後有什麼作業要求然後</p><p>還有一些簡短的說明這樣那這是非常重要的要讓人可以看了之後很快就看懂你這個作業要幹嘛然後再來是研究動機研究目的這樣然後再來就是很長的證明然後我這邊有特別寫出來我負責寫程式這樣可能職工系的教授會覺得更好這樣再來是參考資料跟程式碼然後影片方格</p><p>就是把證明非常完整的再寫一遍那我覺得做得好的地方是我們仔細的把證明寫了一遍然後把一些我們覺得容易困惑的地方寫清楚然後再來是寫程式驗證可以讓整個證明更有說服力就是你真的可以問電腦說這個證明書到底是哪四個整數的平方盒而不是隻是知道它存在這樣</p><p>再來是需要改進之處Overleaf有些中文字顯示不出來,比如通魚的魚我們就用去掉左邊的石的魚來代替還有很多其他的中文字那這個問題我覺得可以一定是有方法可以克服,但是那個時候不知道為什麼沒有把它做好再來是給學弟的建議首先是選題方面因為</p><p>學習歷程最困難一點就是你可能不知道你要做什麼那如果你有明確目標科系,像我就是資工嘛所以我就去做數學與電腦線性代數或數學物理這種很相關的科目的學習歷程但是如果沒有的話也可以去找你有興趣的方面做因為學習歷程它理論上設計的時候是希望你把自己學習的過程把它記錄下來然後</p><p>升學只是算是附帶的吧我有看到一個報導說有一個學生不知道未來要往哪個科系然後也不知道要寫怎樣的學習歷程然後他就去問老師老師發現他很喜歡看NBA然後意外地對球新穿的球鞋是什麼材質都非常瞭解然後後來他就做了一個這方面的報告最後是區合化的東西這樣所以我覺得就是不管你對什麼有興趣可能都可以做出</p><p>相關學習歷程吧再來是製作我在網路上看到很多的學習歷程的相關教學之類的分享之後發現他很注重一點就是要有摘要有重點要讓人很快就看得懂因為教授可能其實不會把你的每一個字都仔細的看過一遍所以說他可能只看一份檔案只看五分鐘甚至更短</p><p>搞不好一個人五分鐘這樣所以說要把重點寫在最上面比如說剛看到的摘要嘛然後還有證明報告也有寫在上面那這樣看一下就會知道我這份報告到底是要做什麼然後再來是要看得懂呃再來是要看得懂我在網路上看到有人說學生可能會忘了講清楚這份作業的脈絡比如說</p><p>是老師要他們去培養酵母啊然後怎樣怎樣這樣做一堆很繞來繞去的事情那你如果沒有寫清楚的話教授就不知道你在幹嘛所以要把事情全部都寫清楚再來是殘酷的現實就是教授可能其實不怎麼注重你的學習歷程因為他們可能覺得你就是要來比試就像是臺大電機跟資工他都是要你去</p><p>參加他們二階數學或物理的筆試那他們就會把題目出得還蠻難蠻有挑戰性的所以說他們其實可能是不信任學測不信任你的學習歷程他只信任自己出的考試所以說學習歷程這部分的分數可能都給得很高就是九十幾分這只是我們幾個朋友的統計吧所以保險起見還是要做好最後是加碼的部分</p><p>剛剛講到我有做線性代數的學習歷程嘛但是線性代數課的老師其實沒有出什麼作業所以可能只有考試可以寫但是我就想到我其實可以直接把我上課學到什麼東西印象深刻把它寫下來然後就做成了這樣的學習歷程那我就寫了關於線性代數裡面很重要一個事情叫做投影的</p><p>相關的想法還有稍微延伸就是像把子空間投影到另外一個子空間這樣的問題我覺得這也是一個不錯的方式可以讓別人知道你真的對這門課有深入的去學習然後也可以知道你到底學到了什麼東西這樣那我的分享就到這邊謝謝大家</p></div></details>
+<p><a href="https://drive.google.com/file/d/15KqA3VIPMlEc_ztVtFLBSPON6dS84D67/view" target="_blank" rel="noopener">原始影片</a></p>
+<div class="nav"><a href="006.html">← 006</a><a href="008.html">008 →</a></div>
+</div></body></html>
