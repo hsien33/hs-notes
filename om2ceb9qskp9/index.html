@@ -139,6 +139,21 @@ tbody tr:hover{background:#fcfaf5}
 .btn.ghost{background:#fff;color:var(--ink-2);border:1.5px solid var(--line)}
 .btn.ghost:hover{border-color:var(--sage);color:var(--sage-d)}
 
+/* 已過去的事：灰色摺疊區塊，預設收合 */
+.past{background:#f4f3f0;border:1px solid #e2dfd8;border-radius:10px;margin:16px 0;color:#7d7a72}
+.past>summary{cursor:pointer;padding:12px 16px;font-size:.9rem;font-weight:700;color:#7d7a72;list-style:none;display:flex;align-items:center;gap:8px;user-select:none}
+.past>summary::-webkit-details-marker{display:none}
+.past>summary:before{content:"▸";font-size:.9rem;transition:transform .15s;display:inline-block}
+.past[open]>summary:before{transform:rotate(90deg)}
+.past>summary:hover{color:var(--ink-2)}
+.past>summary .tag{font-size:.72rem;font-weight:800;letter-spacing:1px;background:#e6e3dc;color:#8a867c;padding:2px 8px;border-radius:5px}
+.past .inner{padding:2px 16px 16px;font-size:.9rem}
+.past .inner table{opacity:.85}
+.past .inner th{background:#eceae5}
+.past .inner .ck,.past .inner .card,.past .inner .tblwrap{background:#fbfaf8;border-color:#e2dfd8}
+.past .inner strong{color:#6d6a62}
+.past .inner .who{opacity:.7}
+
 .kv{font-size:.86rem;color:var(--ink-3);margin-top:5px}
 .foot{margin-top:50px;padding-top:22px;border-top:1px solid var(--line);font-size:.82rem;color:var(--ink-3)}
 .foot b{color:var(--ink-2)}
@@ -252,32 +267,56 @@ tbody tr:hover{background:#fcfaf5}
   </ol>
   <div class="concl"><div class="lab">記住這句</div><p>獎狀可以補印，過程補不回來。所以家長最該做的不是催他做活動，是幫他把東西收好。</p></div>
 
-  <h3 id="urgent">🔴 眼前這幾天：建中官方行事曆</h3>
-  <p class="kv">資料來源：建中《115 學年度新生報到手冊》官方行事曆（逐字核對）。</p>
+  <h3 id="urgent">🔴 眼前與接下來：高一上剩下的時程</h3>
+  <p class="kv">資料來源：建中官方行事曆（115.10.01 版）＋建中官網最新消息（2026-10-11 覆核）。</p>
   <div class="tblwrap"><table>
     <thead><tr><th>日期</th><th>事情</th><th>誰</th></tr></thead>
     <tbody>
-      <tr><td><strong>8/20（四）<br>08:00–17:00</strong></td><td><strong>新生始業輔導</strong>第 1 天。08:00 前到班上集合點名。穿素色整齊衣服，<strong>不得穿無袖上衣、涼鞋、拖鞋</strong>。無法參加要電話向生輔組請假（分機 335、331）</td><td>孩子</td></tr>
-      <tr style="background:#fdf6e3"><td><strong>8/20（四）<br>19:00–21:00</strong></td><td>🔴 <strong>新生家長課程與大學考招說明會</strong>（活動中心 3 樓禮堂）<br><strong>強烈建議去。</strong>學校會親口講這一屆的考招與課程規劃，比任何二手資料可靠，也是拿到正確期程最快的方式</td><td><strong>家長</strong></td></tr>
-      <tr><td><strong>8/20（四）～<br>8/26（三）17:00</strong></td><td><strong>新生線上選社</strong>（系統開放期間）</td><td>孩子</td></tr>
-      <tr><td>8/21（五）</td><td>新生始業輔導第 2 天</td><td>孩子</td></tr>
-      <tr><td><strong>8/31（一）</strong></td><td>開學：08:10 開學典禮、13:00 幹部訓練、<strong>14:00 正式上課</strong>（不是 9/1）</td><td>孩子</td></tr>
-      <tr><td>9/4（五）截止</td><td>學雜費減免補件（如需要），上班日 08:00–12:00 教務處註冊組</td><td>家長</td></tr>
+      <tr style="background:#fdf6e3"><td><strong>10/13–14</strong></td><td>🔴 <strong>高一第 1 次定期考</strong>。考前除了「幫 App 截圖」那件事，其他一律不要加給他</td><td>孩子</td></tr>
+      <tr style="background:#fdf6e3"><td><strong>10 月下旬</strong></td><td>🔴 <strong>學習歷程檔案工作小組會議</strong> —— <strong>115 學年度的上傳／認證／勾選期程會在此後公告</strong>。這是目前最該盯的一則，拿到就能把推估日期換成確切日期</td><td><strong>家長</strong></td></tr>
+      <tr><td>11 月上旬</td><td><strong>128 週年校慶園遊會調查表，11/6 前繳交</strong></td><td>孩子</td></tr>
+      <tr><td><strong>11–12 月</strong></td><td><strong>興趣量表與性向測驗施測</strong> —— 直接餵給高二選班群的決策。<strong>只要叫他認真作答就好</strong>（見「科系方向」分頁）</td><td>孩子</td></tr>
+      <tr><td>11/7、11/8、11/14</td><td>各科奧林匹亞初賽、臺北市學科能力競賽 —— <strong>高一不碰</strong></td><td>—</td></tr>
+      <tr style="background:#fdf6e3"><td><strong>12/1–2</strong></td><td><strong>高一第 2 次定期考</strong></td><td>孩子</td></tr>
+      <tr><td><strong>12/5</strong></td><td><strong>128 週年校慶</strong> —— 高一參與籌備是<strong>現成的多元表現素材</strong>，記得拍「過程」不是只拍合照</td><td>一起</td></tr>
+      <tr><td>12/17</td><td>校內科展報名並繳交作品說明 —— <strong>已決定高一不投</strong>（理由見下方「為什麼走小論文」），日期留著參考</td><td>—</td></tr>
+      <tr><td>12/18</td><td>高一作文抽查</td><td>孩子</td></tr>
+      <tr style="background:#fdf6e3"><td><strong>1/18–20</strong></td><td><strong>高一第 3 次定期考</strong></td><td>孩子</td></tr>
+      <tr><td>1/20 → 2/11</td><td>休業式 → 下學期開學。<strong>寒假是小論文寫第一版的唯一完整窗口</strong></td><td>孩子</td></tr>
+      <tr style="background:#f1f4ea"><td><strong>2027/2/1<br>– 3/15 12:00</strong></td><td>🔴 <strong>小論文投稿期（已查實，不是推估）</strong>。無延長機制；建中校內只收 91 件，額滿投不進去</td><td>一起</td></tr>
     </tbody>
   </table></div>
 
-  <div class="card"><h4>家長說明會／親師座談會，建議當場問到這些</h4>
-    <p style="margin-top:0;font-size:.92rem;color:var(--ink-3)">前兩題是期程，後四題是唐俊華教授給家長的提問清單——比泛泛而問有用得多。</p>
+  <div class="card"><h4>還沒問到的四件事（下次親師座談會或打電話問）</h4>
+    <p style="margin-top:0;font-size:.92rem;color:var(--ink-3)">第 1 題是期程，後三題是唐俊華教授給家長的提問清單——比泛泛而問有用得多。</p>
     <ol>
-      <li>本學期學習歷程檔案的<strong>上傳期限</strong>與<strong>教師認證截止日</strong>（兩者常常不同天）</li>
-      <li>校內學習歷程系統的登入方式</li>
-      <li><strong>班群規劃</strong>是怎麼安排的</li>
+      <li>🔴 <strong>115 學年度本學期的上傳期限與教師認證截止日</strong>（兩者常常不同天，而且認證通常只晚 1–2 天）</li>
+      <li><strong>班群規劃</strong>是怎麼安排的（高二分流，2 月底說明會、4 月中填志願）</li>
       <li><strong>數A、數B 對升學的影響</strong>，主要是哪些學系採計數A或數B</li>
       <li>🔴 <strong>「自然科學探究與實作」排在高一還是高二？</strong>是否一定要修？對升學的影響？</li>
-      <li><strong>自主學習</strong>的引導、計畫、執行、發表怎麼安排</li>
     </ol>
-    <div class="note" style="margin-bottom:0"><b>第 5 題為什麼重要：</b>許多理工醫領域學系在申請入學時<b>建議繳交「自然科學探究與實作」的課程學習成果</b>。這門課有些學校排高一、有些排高二，<b>教育部沒有規定，各校自訂</b>——所以一定要問。社會組對應的是「社會領域探究與實作」。</div>
+    <div class="note" style="margin-bottom:0"><b>第 4 題為什麼重要：</b>許多理工醫領域學系在申請入學時<b>建議繳交「自然科學探究與實作」的課程學習成果</b>。這門課有些學校排高一、有些排高二，<b>教育部沒有規定，各校自訂</b>——所以一定要問。社會組對應的是「社會領域探究與實作」。</div>
   </div>
+
+  <details class="past">
+    <summary><span class="tag">已過去</span>開學前與 8–9 月的事（已完成，留著備查）</summary>
+    <div class="inner">
+      <div class="tblwrap"><table>
+        <thead><tr><th>日期</th><th>事情</th><th>結果</th></tr></thead>
+        <tbody>
+          <tr><td>8/20（四）</td><td>新生始業輔導第 1 天</td><td>已完成</td></tr>
+          <tr><td>8/20（四）19:00</td><td>新生家長課程與大學考招說明會（活動中心 3 樓禮堂）</td><td>已完成</td></tr>
+          <tr><td>8/20–8/26 17:00</td><td>新生線上選社</td><td><strong>結果：西洋棋社</strong></td></tr>
+          <tr><td>8/21（五）</td><td>新生始業輔導第 2 天</td><td>已完成</td></tr>
+          <tr><td>8/31（一）</td><td>開學：08:10 典禮、14:00 正式上課</td><td>已完成</td></tr>
+          <tr><td>9/4（五）</td><td>學雜費減免補件截止</td><td>已過</td></tr>
+          <tr><td>9/16</td><td>社團加退選後名冊公告</td><td>已過</td></tr>
+          <tr><td>9/29</td><td><strong>【高一新生】教育部「課程學習成果呈現指南」手冊發放</strong></td><td>🔑 <strong>問一下孩子手冊在不在，那是官方寫法指引</strong></td></tr>
+        </tbody>
+      </table></div>
+      <p style="margin-bottom:0">開學前那份「建立共用相簿、講三條鐵則、設每月整理提醒、把孩子版網頁給他」的清單也在這個階段完成了。<strong>唯一沒跑起來的是素材倉庫——到現在還是空的</strong>，那件事移到下方「這學期怎麼做」分頁持續追。</p>
+    </div>
+  </details>
 
   <h3>英文與程式：練到什麼程度算夠</h3>
   <div class="good">這兩項是「可轉向資產」裡最容易量化的。用建中官方認定的水準線當刻度，比補習班說的「考張證照」具體。</div>
@@ -290,17 +329,31 @@ tbody tr:hover{background:#fcfaf5}
   </table></div>
   <div class="note"><b>順帶排除一個選項：</b>建中有「資優學生縮短修業年限（免修）」制度，但<b>不值得追</b>——用 TOEFL 85 免修英文，該學期成績會被核計成 B 級（85–89 分），大概率低於正常上課的分數，而在校成績是明確被參採、又完全無法補救的。<b>把英文練強是對的，但不必為了免修去考檢定。</b></div>
 
-  <h3>本月你該做的三件事</h3>
-  <div class="ck" data-ck="now">
-    <div class="ckhd"><span>開學前的最小動作</span><span class="cnt"></span></div>
-    <label><input type="checkbox"><span><span class="who p">家長</span>🔴 <strong>8/20（四）19:00 去參加新生家長課程與大學考招說明會</strong></span></label>
-    <label><input type="checkbox"><span><span class="who b">一起</span>🔴 <strong>8/26（三）17:00 前完成線上選社</strong></span></label>
-    <label><input type="checkbox"><span><span class="who b">一起</span>把「英文練到 <strong>TOEFL 105</strong> 級」設成三年目標（不是為了免修，是為了讓英文不再是要煩惱的科目）</span></label>
-    <label><input type="checkbox"><span><span class="who p">家長</span>跟孩子講「三條鐵則」，<strong>三分鐘講完就好，不要多講</strong></span></label>
-    <label><input type="checkbox"><span><span class="who p">家長</span>建立手機共用相簿或雲端資料夾，讓他隨手丟照片</span></label>
-    <label><input type="checkbox"><span><span class="who p">家長</span>把每月最後一個週日的「15 分鐘整理」設進行事曆</span></label>
-    <label><input type="checkbox"><span><span class="who b">一起</span>把孩子版網頁傳給他，讓他自己看（別站在旁邊盯）</span></label>
+  <h3>現在這個月你該做的事</h3>
+  <div class="ck" data-ck="oct26">
+    <div class="ckhd"><span>2026 年 10 月　段考週，刻意只放五件</span><span class="cnt"></span></div>
+    <label><input type="checkbox"><span><span class="who b">一起</span>🔴 <strong>叫他把詞光 App 要改的三個畫面截圖</strong>（迴響區塊、小喇叭按鈕、四顆熟悉度按鈕）。<strong>改掉就永遠拍不到，這是唯一不能補的事</strong>，兩分鐘</span></label>
+    <label><input type="checkbox"><span><span class="who p">家長</span>🔴 <strong>盯 10 月下旬工作小組會議後的期程公告</strong>，拿到就把推估日期換成確切日期</span></label>
+    <label><input type="checkbox"><span><span class="who p">家長</span>問他 <strong>9/29 發的教育部「課程學習成果呈現指南」手冊</strong>還在不在——那是官方寫法指引，別弄丟</span></label>
+    <label><input type="checkbox"><span><span class="who p">家長</span><strong>段考後</strong>再跟他看成績，重點放「哪一科的方法要調整」，<strong>不談排名</strong></span></label>
+    <label><input type="checkbox"><span><span class="who b">一起</span><strong>段考後</strong>把孩子版的「小論文」與「CK Talks 精華」兩個分頁打開給他看一次，然後讓他自己讀</span></label>
   </div>
+  <div class="warn"><b>這個月刻意不做的事：</b>不要在段考前跟他談小論文、不要催素材倉庫、不要排新活動。<b>10/13–14 之前只有「截圖」那一件。</b></div>
+
+  <details class="past">
+    <summary><span class="tag">已過去</span>開學前的最小動作（8 月，已完成）</summary>
+    <div class="inner">
+      <ul style="margin:0">
+        <li>8/20 新生家長課程與大學考招說明會 —— 已參加</li>
+        <li>8/26 前完成線上選社 —— <strong>結果：西洋棋社</strong></li>
+        <li>跟孩子講「三條鐵則」（三分鐘） —— 已完成</li>
+        <li>建立手機共用相簿或雲端資料夾 —— 已完成</li>
+        <li>把每月最後一個週日的「15 分鐘整理」設進行事曆 —— 已完成</li>
+        <li>把孩子版網頁傳給他 —— 已完成</li>
+        <li>把「英文練到 TOEFL 105」設成三年目標 —— 這條不是一次性動作，持續有效</li>
+      </ul>
+    </div>
+  </details>
 
   <h3>孩子版在哪、跟你這版差在哪</h3>
   <div class="card">
@@ -364,42 +417,38 @@ tbody tr:hover{background:#fcfaf5}
 <section id="t3">
   <h2><span class="n">TAB 3</span>高一上：這學期怎麼做</h2>
   <div class="concl"><div class="lab">一句話結論</div><p>這學期不衝競賽、不砸錢報營隊、不逼他決定科系。只做兩件事：讓成績站穩，讓「丟東西進倉庫」變成習慣。</p></div>
-  <p class="kv">勾選會自動存在這台電腦的瀏覽器裡，下次打開還在。</p>
+  <p class="kv">勾選會自動存在這台電腦的瀏覽器裡，下次打開還在。<strong>已經過去的階段收在灰色摺疊區塊裡</strong>，點一下可以展開備查。</p>
 
-  <div class="ck" data-ck="s0">
-    <div class="ckhd"><span>階段 0　開學前（現在至 8 月底）</span><span class="cnt"></span></div>
-    <label><input type="checkbox"><span><span class="who p">家長</span>告訴孩子倉庫的位置，說明「這是你的，我只負責幫你收，不會看內容評論」</span></label>
-    <label><input type="checkbox"><span><span class="who p">家長</span>建立手機共用相簿或雲端資料夾（<strong>降低摩擦是關鍵</strong>）</span></label>
-    <label><input type="checkbox"><span><span class="who p">家長</span>把「三條鐵則」講一次，三分鐘講完</span></label>
-    <label><input type="checkbox"><span><span class="who b">一起</span>把每月最後一個週日的整理提醒設進行事曆</span></label>
-    <label><input type="checkbox"><span><span class="who k">孩子</span>國中的作品、獎狀、專題若還在，掃描存檔（不能上傳高中檔案，但寫自述時可回顧成長軌跡）</span></label>
-    <label><input type="checkbox"><span><span class="who k">孩子</span>暑假讀完一本書、寫三句話心得丟進倉庫——先讓「丟東西」這個動作發生一次</span></label>
-  </div>
-  <div class="warn"><b>這個階段最大的錯誤是急。</b>開學前就開始講學測、講科系、講競賽，會直接把孩子推開，讓整套系統在第一週就死掉。</div>
-
-  <div class="ck" data-ck="s1">
-    <div class="ckhd"><span>階段 1　開學第一至二週（9 月上旬）　主題：情報蒐集</span><span class="cnt"></span></div>
-    <label><input type="checkbox"><span><span class="who k">孩子</span><strong>向教務處／輔導室問到書面資料</strong>：本學期學習歷程上傳期限</span></label>
-    <label><input type="checkbox"><span><span class="who k">孩子</span>校內學習歷程系統的登入方式</span></label>
-    <label><input type="checkbox"><span><span class="who k">孩子</span>本學期<strong>教師認證的截止日</strong>（跟上傳截止日常常不同天，漏掉整件作廢）</span></label>
-    <label><input type="checkbox"><span><span class="who k">孩子</span>高一下彈性學習時間（自主學習）的規定與申請格式</span></label>
-    <label><input type="checkbox"><span><span class="who p">家長</span>把查到的所有日期登進行事曆，設兩次提醒（提前兩週 ＋ 提前三天）</span></label>
-    <label><input type="checkbox"><span><span class="who p">家長</span>拿到書面資料後，回頭更新專案裡的制度說明檔（目前是通則版，未經學校公告覆核）</span></label>
-    <label><input type="checkbox"><span><span class="who k">孩子</span>線上選社（8/20–8/26）：建議「<strong>1 個學術性社團 ＋ 1 個興趣性社團</strong>」，上限兩個</span></label>
-  </div>
-  <div class="good"><strong>社團選擇的判準：</strong>要一個能待三年、能當幹部的社團，不是四個只去兩次的社團。建中的學術性社團素質高，是很好的多元表現來源。</div>
+  <details class="past">
+    <summary><span class="tag">已過去</span>階段 0（開學前）與階段 1（開學第一二週）—— 大部分已完成</summary>
+    <div class="inner">
+      <p style="margin-top:0"><strong>階段 0　開學前</strong>：告訴孩子倉庫位置、建立共用相簿、講三條鐵則、設每月整理提醒、國中作品掃描存檔、暑假讀一本書丟進倉庫。<br>
+      <span style="color:#8a867c">當時的提醒：這個階段最大的錯誤是急——開學前就講學測、講科系，會把孩子推開。</span></p>
+      <p><strong>階段 1　開學第一二週</strong>：向學校問到上傳期限、系統登入方式、教師認證截止日、自主學習規定；把日期登進行事曆；線上選社。<br>
+      <span style="color:#8a867c">選社結果：<strong>西洋棋社</strong>。當時的判準是「要一個能待三年、能當幹部的社團，不是四個只去兩次的」。</span></p>
+      <div class="note" style="background:#f6f4ef;border-color:#e2dfd8;border-left-color:#b5b0a4;color:#7d7a72;margin-bottom:0">
+        <b style="color:#6d6a62">🔴 這一階段還有兩件沒結案，已移到上面「現在」區：</b><br>
+        ① <b>115 學年度的上傳／認證期程</b>還沒拿到（學校 10 月下旬工作小組會議後才公告）<br>
+        ② <b>素材倉庫到現在還是空的</b>——這是目前最大的缺口
+      </div>
+    </div>
+  </details>
 
   <div class="ck" data-ck="s2">
-    <div class="ckhd"><span>階段 2　9 至 10 月　主題：站穩學業 ＋ 建立記錄習慣</span><span class="cnt"></span></div>
-    <label><input type="checkbox"><span><span class="who k">孩子</span>第一次段考前，把讀書節奏調到適應建中的強度——<strong>這是本學期唯一的優先事項</strong></span></label>
-    <label><input type="checkbox"><span><span class="who k">孩子</span>每次交出去的報告與實驗紀錄，當天拍照或存檔丟進倉庫</span></label>
-    <label><input type="checkbox"><span><span class="who b">一起</span>第一次段考後一起看成績，重點放在「哪一科的方法要調整」，不是排名</span></label>
+    <div class="ckhd"><span>🔴 現在　10 月　主題：段考週，別加東西</span><span class="cnt"></span></div>
+    <label><input type="checkbox"><span><span class="who k">孩子</span><strong>10/13–14 第一次定期考</strong>——<strong>這是本學期唯一的優先事項</strong>，其他全部讓路</span></label>
+    <label><input type="checkbox"><span><span class="who b">一起</span>🔴 <strong>考前唯一要做的事：把詞光 App 要改的三個畫面截圖</strong>（改掉就補不回來）</span></label>
+    <label><input type="checkbox"><span><span class="who p">家長</span>🔴 <strong>盯 10 月下旬公告的 115 學年度上傳／認證／勾選期程</strong>，拿到就更新專案的制度說明檔</span></label>
+    <label><input type="checkbox"><span><span class="who b">一起</span><strong>段考後</strong>一起看成績，重點放「哪一科的方法要調整」，不是排名</span></label>
+    <label><input type="checkbox"><span><span class="who k">孩子</span><strong>段考後</strong>開始把交出去的報告與實驗紀錄當天丟進倉庫（<strong>目前倉庫是空的，這是最大缺口</strong>）</span></label>
     <label><input type="checkbox"><span><span class="who k">孩子</span>任選 2 個好奇的科系，看它們的<strong>大一大二必修課表</strong>，各花 20 分鐘</span></label>
     <label><input type="checkbox"><span><span class="who p">家長</span><strong>約一場 30 分鐘的閒聊</strong>：人脈裡的醫師、工程師、律師、金融從業者（吃飯就好，別搞成面試）</span></label>
   </div>
 
   <div class="ck" data-ck="s3">
-    <div class="ckhd"><span>階段 3　11 至 12 月　主題：第一份正式產出</span><span class="cnt"></span></div>
+    <div class="ckhd"><span>接下來　11 至 12 月　主題：第一份正式產出</span><span class="cnt"></span></div>
+    <label><input type="checkbox"><span><span class="who k">孩子</span><strong>興趣量表與性向測驗認真作答</strong>（11–12 月施測）——結果直接餵給高二選班群</span></label>
+    <label><input type="checkbox"><span><span class="who b">一起</span><strong>11/6 前繳交校慶園遊會調查表</strong>；<strong>12/5 校慶籌備過程記得拍照</strong>（現成的多元表現素材）</span></label>
     <label><input type="checkbox"><span><span class="who k">孩子</span>挑出這學期最滿意的 1 至 2 份作業，補上四段結構，排版成 PDF</span></label>
     <label><input type="checkbox"><span><span class="who k">孩子</span>請任課老師認證——<strong>不要等期末</strong>，老師期末最忙，而且會忘記你當時做了什麼</span></label>
     <label><input type="checkbox"><span><span class="who k">孩子</span>上傳到校內系統，同時存一份到專案資料夾（<strong>校方系統不是備份系統</strong>）</span></label>
@@ -409,13 +458,24 @@ tbody tr:hover{background:#fcfaf5}
   <div class="note"><b>選件提醒：</b>不必挑分數最高的那份。<strong>有轉折、有失敗、有想法的那份反而更好寫</strong>，因為反思段才是拉開差距的地方。</div>
 
   <div class="ck" data-ck="s4">
-    <div class="ckhd"><span>階段 4　1 月期末 ＋ 寒假　主題：結算與規劃</span><span class="cnt"></span></div>
-    <label><input type="checkbox"><span><span class="who k">孩子</span>完成所有上傳，確認老師已認證（<strong>沒認證等於沒交</strong>）</span></label>
+    <div class="ckhd"><span>接下來　1 月期末 ＋ 寒假　主題：結算，以及小論文第一版</span><span class="cnt"></span></div>
+    <label><input type="checkbox"><span><span class="who k">孩子</span>完成所有上傳，<strong>而且要按「送出認證」</strong>（只上傳老師看不到），再確認老師真的認證了</span></label>
     <label><input type="checkbox"><span><span class="who k">孩子</span>期末成績單掃描存檔</span></label>
     <label><input type="checkbox"><span><span class="who b">一起</span><strong>半年檢討會</strong>（一小時，一年兩次就好，只問四個問題，不評分）</span></label>
-    <label><input type="checkbox"><span><span class="who k">孩子</span>寒假：開始構思高一下的自主學習計畫主題</span></label>
+    <label><input type="checkbox"><span><span class="who k">孩子</span>🔴 <strong>寒假：小論文寫第一版</strong>——這是唯一一段不用顧段考的完整時間</span></label>
     <label><input type="checkbox"><span><span class="who k">孩子</span>寒假：英文檢定準備啟動</span></label>
   </div>
+
+  <div class="ck" data-ck="s5">
+    <div class="ckhd"><span>接下來　2027 年 2–3 月　主題：小論文投稿</span><span class="cnt"></span></div>
+    <label><input type="checkbox"><span><span class="who p">家長</span><strong>向圖書股長或圖書館讀者服務組索取「學校驗證碼」</strong>（沒有它無法在中學生網站註冊）</span></label>
+    <label><input type="checkbox"><span><span class="who p">家長</span>列印<strong>參賽作品切結書</strong>，簽名後掃描上傳到校內繳交表單（沒繳＝學校直接刪作品）</span></label>
+    <label><input type="checkbox"><span><span class="who b">一起</span>🔴 <strong>註冊時用建中 Google 信箱；入學年那一格看兩次</strong>（填錯喪失資格、獎狀追回）</span></label>
+    <label><input type="checkbox"><span><span class="who p">家長</span>用「淘汰清單」逐條核對一次（封面、頁首、頁數、文獻數、篇名一致）——<strong>這是家長該做的校對，不是改內容</strong></span></label>
+    <label><input type="checkbox"><span><span class="who b">一起</span>🔴 <strong>2027/3/15 中午 12:00 截稿，但要早投</strong>——建中校內只收 91 件，額滿就投不進去</span></label>
+  </div>
+  <div class="warn"><b>🔴 一條不能碰的紅線：</b>官方實施計畫與評審要點都明訂「文章內容（含摘要、改寫、<b>圖表</b>等）<b>不得以任何 AI 工具生成</b>」，違反是<b>通知學校並停權一個梯次</b>。<br>
+  <b>注意要分清楚：</b>詞光 App 本身是用 AI 開發的，<b>完全沒問題</b>——那是研究對象。不能用 AI 的是<b>小論文的文字和圖表</b>。完整規則見 <code>02_成果與表現/小論文_官方規則與淘汰清單.md</code>。</div>
 
   <div class="two">
     <div class="card"><h4>本學期的三個成功指標</h4>
