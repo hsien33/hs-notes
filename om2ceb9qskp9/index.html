@@ -146,7 +146,8 @@ tbody tr:hover{background:#fcfaf5}
 .past>summary:before{content:"▸";font-size:.9rem;transition:transform .15s;display:inline-block}
 .past[open]>summary:before{transform:rotate(90deg)}
 .past>summary:hover{color:var(--ink-2)}
-.past>summary .tag{font-size:.72rem;font-weight:800;letter-spacing:1px;background:#e6e3dc;color:#8a867c;padding:2px 8px;border-radius:5px}
+.past>summary .tag{flex:none;white-space:nowrap;font-size:.72rem;font-weight:800;letter-spacing:1px;background:#e6e3dc;color:#8a867c;padding:2px 8px;border-radius:5px;align-self:flex-start;margin-top:2px}
+.past>summary .ttl{flex:1;min-width:0}
 .past .inner{padding:2px 16px 16px;font-size:.9rem}
 .past .inner table{opacity:.85}
 .past .inner th{background:#eceae5}
@@ -299,7 +300,7 @@ tbody tr:hover{background:#fcfaf5}
   </div>
 
   <details class="past">
-    <summary><span class="tag">已過去</span>開學前與 8–9 月的事（已完成，留著備查）</summary>
+    <summary><span class="tag">已過去</span><span class="ttl">開學前與 8–9 月的事（已完成，留著備查）</span></summary>
     <div class="inner">
       <div class="tblwrap"><table>
         <thead><tr><th>日期</th><th>事情</th><th>結果</th></tr></thead>
@@ -341,7 +342,7 @@ tbody tr:hover{background:#fcfaf5}
   <div class="warn"><b>這個月刻意不做的事：</b>不要在段考前跟他談小論文、不要催素材倉庫、不要排新活動。<b>10/13–14 之前只有「截圖」那一件。</b></div>
 
   <details class="past">
-    <summary><span class="tag">已過去</span>開學前的最小動作（8 月，已完成）</summary>
+    <summary><span class="tag">已過去</span><span class="ttl">開學前的最小動作（8 月，已完成）</span></summary>
     <div class="inner">
       <ul style="margin:0">
         <li>8/20 新生家長課程與大學考招說明會 —— 已參加</li>
@@ -420,7 +421,7 @@ tbody tr:hover{background:#fcfaf5}
   <p class="kv">勾選會自動存在這台電腦的瀏覽器裡，下次打開還在。<strong>已經過去的階段收在灰色摺疊區塊裡</strong>，點一下可以展開備查。</p>
 
   <details class="past">
-    <summary><span class="tag">已過去</span>階段 0（開學前）與階段 1（開學第一二週）—— 大部分已完成</summary>
+    <summary><span class="tag">已過去</span><span class="ttl">階段 0（開學前）與階段 1（開學第一二週）—— 大部分已完成</span></summary>
     <div class="inner">
       <p style="margin-top:0"><strong>階段 0　開學前</strong>：告訴孩子倉庫位置、建立共用相簿、講三條鐵則、設每月整理提醒、國中作品掃描存檔、暑假讀一本書丟進倉庫。<br>
       <span style="color:#8a867c">當時的提醒：這個階段最大的錯誤是急——開學前就講學測、講科系，會把孩子推開。</span></p>
@@ -1088,7 +1089,7 @@ tbody tr:hover{background:#fcfaf5}
   var START=new Date(2026,8,1), EXAM=new Date(2029,0,20);
   var phases=[
     [new Date(2026,7,1), new Date(2026,8,1),  '開學前',   '把系統建好，不要提前給壓力。只講三條鐵則，三分鐘。'],
-    [new Date(2026,8,1), new Date(2027,1,1),  '高一上',   '站穩學業，把「隨手記錄」變成習慣。開學第一週去教務處問到四項書面資料。'],
+    [new Date(2026,8,1), new Date(2027,1,1),  '高一上',   '顧成績為第一優先。10 月下旬會公告本學年上傳期程，拿到就把推估日期換成確切日期。'],
     [new Date(2027,1,1), new Date(2027,6,1),  '高一下',   '自主學習計畫啟動，第一次課程學習成果上傳並請老師認證。4 至 5 月要有選組初步方向。'],
     [new Date(2027,6,1), new Date(2027,8,1),  '高一暑假', '全期最高價值的窗口：大學營隊、第一個小專題、英文檢定。營隊在 3 至 5 月就要報名。'],
     [new Date(2027,8,1), new Date(2028,1,1),  '高二上',   '主軸定案，啟動旗艦專題。之後所有成果圍繞主軸做連貫敘事。'],
